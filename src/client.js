@@ -2,7 +2,7 @@ const grpc = require('@grpc/grpc-js')
 const protoLoader = require('@grpc/proto-loader')
 
 const packageDefination = protoLoader.loadSync(
-  __dirname + '/src/proto/message.proto'
+  __dirname + '/proto/message.proto'
 )
 const protoDescriptor = grpc.loadPackageDefinition(packageDefination)
 const MessagePackage = protoDescriptor.MessagePackage

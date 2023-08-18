@@ -4,13 +4,9 @@ package MessagePackage;
 
 message Empty {}
 
-message Message {
-  string body = 1;
-}
+message Message { string body = 1; }
 
-message Messages {
-  repeated Message messages = 1;
-}
+message Messages { repeated Message messages = 1; }
 
 service MessageService {
   rpc sendMessage(Message) returns (Message);

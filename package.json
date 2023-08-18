@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "gen": "protoc --js_out=import_style=commonjs,binary:. ./src/proto/*.proto",
+    "clean": "rm ./src/proto/*_pb.js",
     "lint": "eslint .",
     "format": "prettier --write ."
   },
